@@ -21,10 +21,17 @@ Frame g_currentFrame;
 
 void setup() {
   Serial.begin(_DEBUG_SERIAL_BAUD_RATE);
+  
   pinMode(_BTN_U_PIN, INPUT_PULLUP);
+  pinMode(_BTN_L_PIN, INPUT_PULLUP);
+  pinMode(_BTN_R_PIN, INPUT_PULLUP);
+  pinMode(_BTN_D_PIN, INPUT_PULLUP);
+  pinMode(_BTN_B_PIN, INPUT_PULLUP);
+  pinMode(_BTN_T_PIN, INPUT_PULLUP);
+  
   digitalWrite(A4, 1);
   digitalWrite(A5, 1);
-  Wire.begin(8);                // join i2c bus with address #8
+  Wire.begin(8);                // join i2c bus with address #8 
   Wire.onRequest(requestEvent); // register event
 }
 
