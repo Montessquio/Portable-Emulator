@@ -1,0 +1,426 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr USLetter 11000 8500
+encoding utf-8
+Sheet 1 1
+Title "Portable Emulator"
+Date "2019-12-28"
+Rev "1"
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L ConsolePartsLib:Raspberry_Pi_4 Pi
+U 1 1 5E08330B
+P 6350 5300
+F 0 "Pi" H 6350 5400 50  0000 C CNN
+F 1 "Raspberry_Pi_4" H 6350 5300 50  0000 C CNN
+F 2 "MODULE" H 6350 4200 50  0001 C CNN
+F 3 "DOCUMENTATION" H 6350 4300 50  0001 C CNN
+	1    6350 5300
+	1    0    0    -1  
+$EndComp
+$Comp
+L ConsolePartsLib:Controller CL
+U 1 1 5E086D3A
+P 2850 6150
+F 0 "CL" H 2883 7015 50  0000 C CNN
+F 1 "Controller" H 2883 6924 50  0000 C CNN
+F 2 "" H 2850 6150 50  0001 C CNN
+F 3 "" H 2850 6150 50  0001 C CNN
+	1    2850 6150
+	1    0    0    -1  
+$EndComp
+$Comp
+L ConsolePartsLib:Controller CR
+U 1 1 5E088033
+P 2850 5350
+F 0 "CR" H 2883 6215 50  0000 C CNN
+F 1 "Controller" H 2883 6124 50  0000 C CNN
+F 2 "" H 2850 5350 50  0001 C CNN
+F 3 "" H 2850 5350 50  0001 C CNN
+	1    2850 5350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7100 4350 7100 4050
+Wire Wire Line
+	7100 4050 4900 4050
+Wire Wire Line
+	4900 4050 4900 4100
+Wire Wire Line
+	4900 5550 3050 5550
+Wire Wire Line
+	3050 4750 4900 4750
+Connection ~ 4900 4750
+Wire Wire Line
+	4900 4750 4900 5550
+Wire Wire Line
+	3050 5850 5450 5850
+Wire Wire Line
+	5450 5850 5450 5550
+Wire Wire Line
+	5450 5550 5600 5550
+$Comp
+L Device:LED D0
+U 1 1 5E09913F
+P 8100 4450
+F 0 "D0" H 8093 4195 50  0000 C CNN
+F 1 "LED" H 8093 4286 50  0000 C CNN
+F 2 "" H 8100 4450 50  0001 C CNN
+F 3 "~" H 8100 4450 50  0001 C CNN
+	1    8100 4450
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:LED D1
+U 1 1 5E0999B7
+P 8100 5050
+F 0 "D1" H 8093 4795 50  0000 C CNN
+F 1 "LED" H 8093 4886 50  0000 C CNN
+F 2 "" H 8100 5050 50  0001 C CNN
+F 3 "~" H 8100 5050 50  0001 C CNN
+	1    8100 5050
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:LED D2
+U 1 1 5E099D39
+P 8100 5450
+F 0 "D2" H 8093 5195 50  0000 C CNN
+F 1 "LED" H 8093 5286 50  0000 C CNN
+F 2 "" H 8100 5450 50  0001 C CNN
+F 3 "~" H 8100 5450 50  0001 C CNN
+	1    8100 5450
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:R_US R0
+U 1 1 5E09DE9F
+P 7800 4450
+F 0 "R0" V 7595 4450 50  0000 C CNN
+F 1 "R_US" V 7686 4450 50  0000 C CNN
+F 2 "" V 7840 4440 50  0001 C CNN
+F 3 "~" H 7800 4450 50  0001 C CNN
+	1    7800 4450
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R_US R2
+U 1 1 5E09EFF1
+P 7800 5050
+F 0 "R2" V 7595 5050 50  0000 C CNN
+F 1 "R_US" V 7686 5050 50  0000 C CNN
+F 2 "" V 7840 5040 50  0001 C CNN
+F 3 "~" H 7800 5050 50  0001 C CNN
+	1    7800 5050
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R_US R3
+U 1 1 5E09F5ED
+P 7800 5450
+F 0 "R3" V 7595 5450 50  0000 C CNN
+F 1 "R_US" V 7686 5450 50  0000 C CNN
+F 2 "" V 7840 5440 50  0001 C CNN
+F 3 "~" H 7800 5450 50  0001 C CNN
+	1    7800 5450
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	7650 5050 7550 5050
+Wire Wire Line
+	7550 5050 7550 5550
+Wire Wire Line
+	7650 5650 7650 5450
+Wire Wire Line
+	8250 4450 8400 4450
+Wire Wire Line
+	8400 5750 7100 5750
+Wire Wire Line
+	8250 5450 8400 5450
+Connection ~ 8400 5450
+Wire Wire Line
+	8400 5450 8400 5750
+Wire Wire Line
+	8400 5050 8250 5050
+Connection ~ 8400 5050
+Wire Wire Line
+	8400 5050 8400 5450
+$Comp
+L ConsolePartsLib:I2S_Amplifier A
+U 1 1 5E0A7743
+P 3950 4500
+F 0 "A" H 4378 5796 50  0000 L CNN
+F 1 "I2S_Amplifier" H 4378 5705 50  0000 L CNN
+F 2 "" H 3950 4500 50  0001 C CNN
+F 3 "" H 3950 4500 50  0001 C CNN
+	1    3950 4500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4300 3950 4300 4100
+Wire Wire Line
+	4300 4100 4900 4100
+Connection ~ 4900 4100
+Wire Wire Line
+	4900 4100 4900 4750
+Wire Wire Line
+	5000 4750 5600 4750
+Text Notes 3550 3550 2    50   ~ 0
+\n
+Wire Wire Line
+	7300 4850 7100 4850
+Wire Wire Line
+	3700 3950 3700 6050
+Wire Wire Line
+	3700 6050 5600 6050
+Wire Wire Line
+	3800 3950 3800 4000
+Wire Wire Line
+	3800 4000 7300 4000
+Wire Wire Line
+	5000 5050 5000 4750
+Wire Wire Line
+	5600 6250 4200 6250
+Wire Wire Line
+	4200 6250 4200 3950
+Wire Wire Line
+	3900 3950 3900 6500
+Wire Wire Line
+	3900 6500 7100 6500
+Wire Wire Line
+	7100 6500 7100 6250
+Text Notes 3600 3350 2    50   ~ 0
+\n    15dB if a 100K resistor is connected between GAIN and GND\n    12dB if GAIN is connected directly to GND\n    9dB if GAIN is not connected to anything (this is the default)\n    6dB if GAIN is conneted directly to Vin\n    3dB if a 100K resistor is connected between GAIN and Vin\n\n
+$Comp
+L ConsolePartsLib:Speaker SL
+U 1 1 5E0BF618
+P 3150 1400
+F 0 "SL" V 2835 2250 50  0000 C CNN
+F 1 "Speaker" V 2926 2250 50  0000 C CNN
+F 2 "" H 3150 1400 50  0001 C CNN
+F 3 "" H 3150 1400 50  0001 C CNN
+	1    3150 1400
+	0    1    1    0   
+$EndComp
+$Comp
+L ConsolePartsLib:Speaker SR
+U 1 1 5E0C08DD
+P 3150 1950
+F 0 "SR" V 2835 2800 50  0000 C CNN
+F 1 "Speaker" V 2926 2800 50  0000 C CNN
+F 2 "" H 3150 1950 50  0001 C CNN
+F 3 "" H 3150 1950 50  0001 C CNN
+	1    3150 1950
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	4500 1400 4500 1950
+Wire Wire Line
+	4500 2550 4100 2550
+Connection ~ 4500 1950
+Wire Wire Line
+	4500 1950 4500 2550
+Wire Wire Line
+	3900 2550 3500 2550
+Wire Wire Line
+	3500 2550 3500 1950
+Connection ~ 3500 1950
+Wire Wire Line
+	3500 1950 3500 1400
+Text Notes 7500 3850 0    50   ~ 0
+Status LEDs:\nD0: Red PWR LED\nSW0: Blu BOOT LED\nD1: GRN CTR_L Status\nD2: RED CTR_R Status
+Wire Wire Line
+	7100 5650 7650 5650
+Wire Wire Line
+	7550 5550 7100 5550
+$Comp
+L Switch:SW_Push SW1
+U 1 1 5E0DBF5A
+P 9250 4800
+F 0 "SW1" H 9250 5085 50  0000 C CNN
+F 1 "SW_Push" H 9250 4994 50  0000 C CNN
+F 2 "" H 9250 5000 50  0001 C CNN
+F 3 "~" H 9250 5000 50  0001 C CNN
+	1    9250 4800
+	1    0    0    -1  
+$EndComp
+$Comp
+L Switch:SW_Push SW2
+U 1 1 5E0DBFEC
+P 9250 5200
+F 0 "SW2" H 9250 5485 50  0000 C CNN
+F 1 "SW_Push" H 9250 5394 50  0000 C CNN
+F 2 "" H 9250 5400 50  0001 C CNN
+F 3 "~" H 9250 5400 50  0001 C CNN
+	1    9250 5200
+	1    0    0    -1  
+$EndComp
+$Comp
+L Switch:SW_Push SW3
+U 1 1 5E0DC277
+P 9250 5600
+F 0 "SW3" H 9250 5885 50  0000 C CNN
+F 1 "SW_Push" H 9250 5794 50  0000 C CNN
+F 2 "" H 9250 5800 50  0001 C CNN
+F 3 "~" H 9250 5800 50  0001 C CNN
+	1    9250 5600
+	1    0    0    -1  
+$EndComp
+$Comp
+L Switch:SW_MEC_5G_LED SW0
+U 1 1 5E0E1F0A
+P 6200 3250
+F 0 "SW0" H 6200 3010 50  0000 C CNN
+F 1 "SW_MEC_5G_LED" H 6200 3101 50  0000 C CNN
+F 2 "" H 6200 3550 50  0001 C CNN
+F 3 "http://www.apem.com/int/index.php?controller=attachment&id_attachment=488" H 6200 3550 50  0001 C CNN
+	1    6200 3250
+	-1   0    0    1   
+$EndComp
+Text Notes 2600 5350 2    50   ~ 0
+SDA6: Pin 15\nSCL6: Pin 16
+Wire Wire Line
+	3050 5050 5000 5050
+Wire Wire Line
+	5600 5050 5200 5050
+Wire Wire Line
+	5200 5050 5200 5650
+Wire Wire Line
+	5200 5650 3600 5650
+Wire Wire Line
+	3050 4850 3600 4850
+Wire Wire Line
+	3600 4850 3600 5650
+Connection ~ 3600 5650
+Wire Wire Line
+	3600 5650 3050 5650
+Wire Wire Line
+	7100 5050 7200 5050
+Wire Wire Line
+	7200 5050 7200 6550
+Wire Wire Line
+	7200 6550 3150 6550
+Wire Wire Line
+	3150 6550 3150 5750
+Wire Wire Line
+	3150 4950 3050 4950
+Wire Wire Line
+	3050 5750 3150 5750
+Connection ~ 3150 5750
+Wire Wire Line
+	3150 5750 3150 4950
+Wire Wire Line
+	8400 4450 8400 5050
+$Comp
+L Device:R_US R4
+U 1 1 5E0F6608
+P 6550 3250
+F 0 "R4" V 6300 3450 50  0000 C CNN
+F 1 "R_US" V 6400 3450 50  0000 C CNN
+F 2 "" V 6590 3240 50  0001 C CNN
+F 3 "~" H 6550 3250 50  0001 C CNN
+	1    6550 3250
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	5600 4550 5450 4550
+Wire Wire Line
+	5450 4550 5450 3350
+Wire Wire Line
+	5450 3350 6000 3350
+Wire Wire Line
+	7200 4550 7100 4550
+Text Notes 5600 3700 0    50   ~ 0
+Short Pin 5 to GND from HLT to wake.\nShort from wake to HLT.
+Wire Wire Line
+	6400 3350 7200 3350
+Wire Wire Line
+	7300 4000 7300 4850
+Wire Wire Line
+	7650 4450 7100 4450
+Wire Wire Line
+	6000 3250 5500 3250
+Wire Wire Line
+	5500 3250 5500 4650
+Wire Wire Line
+	5500 4650 5600 4650
+Wire Wire Line
+	6700 3250 7200 3250
+Wire Wire Line
+	7200 3250 7200 3350
+Connection ~ 7200 3350
+Wire Wire Line
+	7200 3350 7200 4550
+Text Notes 9000 4300 0    50   ~ 0
+Misc. Keys\nSW1: Volume Up\nSW2: Volume Down\nSW3: Home Menu\nSW4: Start\nSW5: Select
+$Comp
+L Switch:SW_Push SW4
+U 1 1 5E11D217
+P 9250 6000
+F 0 "SW4" H 9250 6285 50  0000 C CNN
+F 1 "SW_Push" H 9250 6194 50  0000 C CNN
+F 2 "" H 9250 6200 50  0001 C CNN
+F 3 "~" H 9250 6200 50  0001 C CNN
+	1    9250 6000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Switch:SW_Push SW5
+U 1 1 5E11D460
+P 9250 6400
+F 0 "SW5" H 9250 6685 50  0000 C CNN
+F 1 "SW_Push" H 9250 6594 50  0000 C CNN
+F 2 "" H 9250 6600 50  0001 C CNN
+F 3 "~" H 9250 6600 50  0001 C CNN
+	1    9250 6400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9450 4800 9450 5200
+Wire Wire Line
+	9450 6550 7250 6550
+Wire Wire Line
+	7250 6550 7250 5950
+Wire Wire Line
+	7250 5950 7100 5950
+Connection ~ 9450 5200
+Wire Wire Line
+	9450 5200 9450 5600
+Connection ~ 9450 5600
+Wire Wire Line
+	9450 5600 9450 6000
+Connection ~ 9450 6000
+Wire Wire Line
+	9450 6000 9450 6400
+Connection ~ 9450 6400
+Wire Wire Line
+	9450 6400 9450 6550
+Wire Wire Line
+	7100 4650 9050 4650
+Wire Wire Line
+	9050 4650 9050 4800
+Wire Wire Line
+	7100 4750 9000 4750
+Wire Wire Line
+	9000 4750 9000 5200
+Wire Wire Line
+	9000 5200 9050 5200
+Wire Wire Line
+	7100 6050 9050 6050
+Wire Wire Line
+	9050 6050 9050 6000
+Wire Wire Line
+	7100 6150 9050 6150
+Wire Wire Line
+	9050 6150 9050 6400
+Wire Wire Line
+	7100 5850 9050 5850
+Wire Wire Line
+	9050 5850 9050 5600
+$EndSCHEMATC
