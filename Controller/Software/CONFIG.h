@@ -11,7 +11,7 @@
 #define _JOY_X_PIN A0 // Joystick X
 #define _JOY_Y_PIN A1 // Joystick Y
 
-
-#define _DEBUG_SERIAL_BAUD_RATE 9600
+#define SDA A4 // I2C Pin
+#define SCL A5 // I2C Pin
 
 #endif

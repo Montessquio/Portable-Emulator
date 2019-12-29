@@ -7,5 +7,4 @@
 #define u32 uint32_t
 #define usize uintptr_t
 
-#define UNIMPLEMENTED 0xFF
 #endif
